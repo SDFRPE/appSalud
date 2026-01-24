@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    background-color: #3a3a3a;
+    padding: 30px;
+    color: white;
+}
+
+.page-title {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Contenedor de los miembros del equipo */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 10%;
+}
+
+/* Estilo de cada miembro del equipo */
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Efecto de elevación en hover */
+}
+
+/* Imagen de los miembros del equipo */
+.team-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Estilos de texto */
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Responsividad: ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+    .team-container {
+        margin: 40px 5%;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .page-title {
+        font-size: 2em;
+    }
+}
