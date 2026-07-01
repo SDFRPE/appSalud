@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Definir constantes principales
+// Definir constantes principales (Test)
 if (!defined('ROOT_PATH')) {
     define('ROOT_PATH', __DIR__);
 }
